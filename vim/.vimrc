@@ -29,3 +29,13 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 
 imap <Insert> <Nop>
 inoremap <S-Insert> <Insert>
+map <C-n> :NERDTreeToggle<CR>
+
+call plug#begin('~/.vim/plugged')
+  Plug 'francoiscabrol/ranger.vim'
+  Plug 'Valloric/YouCompleteMe'
+  Plug 'scrooloose/nerdtree'
+call plug#end()
+
+
+let g:ycm_global_ycm_extra_conf="/home/fr/.vim/.ycm_extra_conf.py"
